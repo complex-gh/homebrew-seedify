@@ -3,7 +3,7 @@ cask "seedify" do
   name "seedify"
   desc "Create seed phrases deterministically from SSH keys"
   homepage "https://github.com/complex-gh/seedify"
-  version "0.0.1-test3"
+  version "0.0.1-test4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "seedify" do
   on_macos do
     on_intel do
       url "https://github.com/complex-gh/seedify/releases/download/v#{version}/seedify_darwin_amd64.tar.gz"
-      sha256 "a9812ea9c760e3d9bc5897384c9504456a8dfd40cc906a403587b56885721022"
+      sha256 "32d4dee22e7c3b535ecabea4e4dc1c9891ecacfa8dc3f3ac58190a57a2b992c8"
     end
     on_arm do
       url "https://github.com/complex-gh/seedify/releases/download/v#{version}/seedify_darwin_arm64.tar.gz"
-      sha256 "07d82d132ba5e40bfda4c61c5cf6e29988f2997145a8fbb80528fe929f85501b"
+      sha256 "8f983e6d3cfbf7ccfde3a4965ff67b63a29e55f8d4aee6883b30ae698daedbc0"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/complex-gh/seedify/releases/download/v#{version}/seedify_linux_amd64.tar.gz"
-      sha256 "bb467a016156b763dd23c6fc7be5f83e20d1061128f139a7eca4aa6c274dc076"
+      sha256 "d154efd320e74e6a5ab9774c0e758f985015a987e8ac995281459d1c7e33390a"
     end
     on_arm do
       url "https://github.com/complex-gh/seedify/releases/download/v#{version}/seedify_linux_arm64.tar.gz"
-      sha256 "aba0b6b6931702a87e99705d56b0de29c02bc77ab90ae83162436995ff30d633"
+      sha256 "414c63b31a807aead39a1d77f80b227d9722edc8a18aa197d8389391d89b3346"
     end
   end
 
