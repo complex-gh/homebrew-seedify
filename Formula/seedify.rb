@@ -11,7 +11,7 @@ class Seedify < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/complex-gh/seedify/releases/download/v1.16.0/seedify_1.16.0_Darwin_x86_64.tar.gz"
-      sha256 "2e200a9b097f51a72bddea40c235417959ef8b502e3389e58f98f500ba2b6343"
+      sha256 "882124f3cf337f9f17d4fd14971911b01218e98a2e1bab616f2aff97a6f05269"
 
       define_method(:install) do
         bin.install "seedify"
@@ -23,7 +23,7 @@ class Seedify < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/complex-gh/seedify/releases/download/v1.16.0/seedify_1.16.0_Darwin_arm64.tar.gz"
-      sha256 "b482784928b5a6727743872a1b129d47f141cf6db10c7a67f4370c90265e87e5"
+      sha256 "5b64cd5cb63ad73be285c086bbd322c1ddf4e6b67922fc9ccd56a74405fee551"
 
       define_method(:install) do
         bin.install "seedify"
@@ -38,7 +38,7 @@ class Seedify < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/complex-gh/seedify/releases/download/v1.16.0/seedify_1.16.0_Linux_x86_64.tar.gz"
-      sha256 "f97530ac4d2fc0c06c4cb7fddfa3c6106bc1854a1ad26fbd40ae70786242c5f3"
+      sha256 "236569bbc1074e13eaec3e0bdab6d7e9d6ca341d8813bfbcb6e3157c14c3a136"
       define_method(:install) do
         bin.install "seedify"
         bash_completion.install "completions/seedify.bash" => "seedify"
@@ -49,7 +49,7 @@ class Seedify < Formula
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/complex-gh/seedify/releases/download/v1.16.0/seedify_1.16.0_Linux_armv7.tar.gz"
-      sha256 "33055748dd743b7695a2ebd08e747065e3289b7c3d422f0a97496667c4835d46"
+      sha256 "84c05244e70940b3167dede8a6c9b7553cc02fa0951b2a825e327801be890432"
       define_method(:install) do
         bin.install "seedify"
         bash_completion.install "completions/seedify.bash" => "seedify"
@@ -60,7 +60,7 @@ class Seedify < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/complex-gh/seedify/releases/download/v1.16.0/seedify_1.16.0_Linux_arm64.tar.gz"
-      sha256 "5b5c5e714ab21a72395a8814df8a8cc1d592a1a38cfd3a09d086dadba994ae14"
+      sha256 "0d1ab908db1e511abdab159ba4879c7457d6d59ad9e1b1308fa60b670926ddf3"
       define_method(:install) do
         bin.install "seedify"
         bash_completion.install "completions/seedify.bash" => "seedify"
